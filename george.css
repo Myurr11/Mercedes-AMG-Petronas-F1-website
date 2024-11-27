@@ -1,0 +1,91 @@
+/* body of page properties */
+body {
+    background-color: black;
+    font-family: comfortaa, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* making container */
+.container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+/* left section of container */
+.left-section {
+    width: 50%;
+    background-color: black;
+    padding: 20px;
+}
+
+/* Right section of container */
+.right-section {
+    width: 50%;
+    background-color: #03BFB5;
+    padding: 15px;
+    margin-top: -10px;
+}
+
+/* #name is id given to <h1 id="name">George Russell</h1> */
+#name{
+    font-weight: bold;
+    font-size: 50px;
+    margin: 0;
+}
+#Des{
+    margin-left: 5px;
+}
+
+/* is for left grid */
+.left_grid {
+    margin-top: 350px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.left_grid-item {
+    background-color: black;
+    padding: 0px;
+    border: 1px solid black;
+}
+
+/*  for right grid */
+.right_grid {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 180px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.right_grid-item {
+    color: black;
+    background-color: #03BFB5;
+    padding: 7px;
+    border: 1px solid #03BFB5;
+}
+
+/* overlay is to display image overlapping on line dividing 2 sections */
+.overlay {
+    position: absolute;
+    top: 192px;
+    right: calc(100% - 1900px); /* Adjust to center the line */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlay img {
+    max-width: 50%;
+    max-height: 100%;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}

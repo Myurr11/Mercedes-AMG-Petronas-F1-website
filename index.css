@@ -1,0 +1,199 @@
+*{
+    font-family: comfortaa, sans-serif;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+.container {
+    display: flex;
+}
+    /* Left section of homepage CSS */
+.left-section {
+    width: 25%;
+    background-color: black; /* Set the background color of the left section */
+    color: white;
+}
+.MercColor-bg {
+    background-color: #03BFB5; /* Black background color for 1st and 3rd sections */
+    color: black;
+    border-radius: 0px 0px 30px 0px;
+}
+.section {
+    padding: 20px;
+    margin-bottom: 15px;
+    margin-top: -10px;
+    }
+.sub-left,
+.sub-right {
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding: 20px;
+    }
+.sub-section{
+    display: flex;
+}
+.left-sub-section{
+    width: 65%;
+    margin: -20px;
+    margin-right: 10px;
+    }
+.left-sub-section img{
+    border-radius: 0px 0px 40px 0px;
+    margin-bottom: -20px;
+    }
+#clock {
+    font-family: comfortaa, sans-serif;
+    font-size: 17px;
+    display: flex;
+    gap: 20px;
+    }
+.time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+/* CSS for right section of Homepage */
+.right-section {
+    width: 85%;
+    margin-top: -8px;
+}
+.image-container {
+    width: 100%;
+    height: 93vh; /* Adjust the height as needed */
+    background-image: url('imgsrc/M424983.webp'); /* Add your image path here */
+    background-size: cover;
+    background-position: center;
+}
+
+/* legoCar CSS */
+.legoCar{
+    display: flex;
+    width: 99vw; /* Full width of the viewport */x
+    height: 95vh; /* Full height of the viewport */
+}
+.left-partition_legoCar, .right-partition_legoCar{
+    flex: 1; /* Each partition occupies equal space */
+    padding: 10px;
+    box-sizing: border-box;
+}
+.left-partition_legoCar{
+    background-color: black;
+    border-radius: 20px;
+}
+.right-partition_legoCar{
+    margin-right: 12px;
+    margin-top: 10%;
+    color: white;
+    background-color: black ;
+    justify-content: flex-end;
+    text-align: right;
+}
+.legoCar img{
+    border-radius: 5px 5px 50px 5px; ;
+}
+.shop-button {
+    font-family: comfortaa;
+    align: right;
+    background-color: #03BFB5;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+}
+.shop-button:hover {
+    background-color: #028277;
+}
+
+/* f1 explained section css */
+.f1explained{
+    display: flex;
+    width: 99vw; /* Full width of the viewport */x
+    height: 95vh; /* Full height of the viewport */
+}
+.left-partition_f1explained, .right-partition_f1explained{
+    flex: 1; /* Each partition occupies equal space */
+    padding: 10px;
+    box-sizing: border-box;
+}
+.left-partition_f1explained{
+    margin-left: 12px;
+    margin-top: 15%;
+    color: white;
+    background-color: black ;
+    text-align: left;
+}
+.right-partition_f1explained{
+    color: white;
+    background-color: black ;
+    justify-content: flex-end;
+    text-align: right;
+}
+.right-partition_f1explained img{
+    border-radius: 50px 5px 50px 5px;
+}
+.f1-button{
+    font-family: comfortaa;
+    background-color: #03BFB5;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+}
+.f1-button:hover {
+    background-color: #028277;
+}
+
+/* More Stories button css */
+.MoreStoriesButton {
+    font-family: comfortaa;
+    align: center;
+    background-color: #03BFB5;
+    color: black;
+    margin-left: 900px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px 10px 0px 0px;
+    cursor: pointer;
+    font-size: 19px;
+    font-weight: bold;
+}
+.MoreStoriesButton:hover {
+    background-color: #028277;
+}
+
+/* Footer CSS */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Hover effect for Section 3 */
+.container .left-section .section.MercColor-bg:nth-child(3) {
+    cursor: pointer;
+    transition: background-position 0.3s ease-in-out, box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    background-image: linear-gradient(to right, #028E81 50%, #03BFB5 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+}
+
+.container .left-section .section.MercColor-bg:nth-child(3):hover {
+    background-position: 0 0; /* Move the gradient to the left on hover */
+    transform: scale(1.02); /* Scale up on hover */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Adjust box shadow on hover */
+}
+
+
+
+

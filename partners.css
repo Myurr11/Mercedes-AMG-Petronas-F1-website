@@ -1,0 +1,112 @@
+body {
+    color: white;
+    background-color: black;
+    font-family: comfortaa, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.left-section {
+    width: 50%;
+    background-color: black;
+    padding: 20px;
+}
+
+.right-section{
+    width: 50%;
+}
+.right-section img{
+    border-radius: 10px 0px 0px 60px;
+}
+.container_PetronasAndINEOS{
+    display: flex;
+    width: 100%;
+    height: 55.5vh;
+}
+
+.left-section_petronas{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 50%;
+    background-color: black;
+    padding: 20px;
+}
+.right-section_petronas{
+    margin-top: 45px;
+    margin-left: 20px;
+    width: 50%;
+}
+
+.right-section_INEOS{
+    width: 50%;
+    margin-top: 40px;
+}
+.left-section_INEOS{
+    width: 50%;
+    background-color: black;
+    padding: 20px;
+    margin-top: 70px;
+}
+
+h1{
+    font-size: 36px;
+    margin: 0;
+}
+h3{
+    text-decoration: none;
+}
+#heading{
+    font-weight: bold;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-size: 60px;
+}
+#teampartners{
+    text-align: center;
+    margin-top: 200px;
+    margin-left: 30px;
+}
+
+img{
+    display: block;
+    border-radius: 10px 0px 65px 0px;
+    width: 100%;
+    height: auto;
+}
+.grid-container_TeamPartners{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.grid-item_TeamPartners{
+    text-align: center;
+}
+#teamSupplies{
+    margin-top: 100px;
+}
+
+/* hover animation */
+/* For scaling up images and adding underline under text on hover */
+.grid-item_TeamPartners img,
+.grid-item_TeamPartners{
+    transition: transform 0.5s ease;
+}
+.grid-item_TeamPartners:hover img {
+    transform: scale(1.05); /* Adjust the scaling factor as needed */
+    border: 2px solid #03BFB5;
+}
+
+.grid-item_TeamPartners:hover p {
+    transform: scale(1.05);
+    color: #03BFB5;
+}

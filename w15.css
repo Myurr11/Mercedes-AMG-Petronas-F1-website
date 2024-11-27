@@ -1,0 +1,133 @@
+/*body*/
+body{
+    background-color: black;
+    font-family: comfortaa, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/*slider*/
+.slider {
+    width: 100%;
+    height: 100vh; /* Set slider height to viewport height */
+    overflow: hidden;
+    position: relative;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: 95%;
+    object-fit: cover; /* Ensure the image covers the entire slide */
+}
+
+.slide.active {
+    display: block;
+}
+
+/* Below slider section */
+.container {
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    margin-bottom: 20px; /* To add space between sections */
+}
+.container h4{
+    color: #03BFB5
+}
+
+.left-section{
+    margin-left: 40px;
+    width: 30%;
+    background-color: black;
+    position: relative;
+}
+
+.right-section{
+    width: 60%;
+    padding: 20px;
+    margin-left: 50px;
+    font-size: 18px;
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 550px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.grid-item {
+    font-size: 25px;
+    background-color: #221F1C;
+    color: #fff;
+    padding: 1px;
+    margin-bottom: 5px;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* for image in "container* section */
+#black{
+    border-radius: 0px 0px 50px 0px;
+    height: 600px;
+    width: 600px;
+}
+
+
+/*------------------technical specification------------------*/
+/* for "technical specification h1 */
+#tech{
+    margin-left: 50px;
+}
+
+.styled-table {
+    border-collapse: separate; /* Set border-collapse to separate */
+    border-spacing: 20px 15px; /* Add spacing between rows (vertical spacing) */
+    margin-left: 600px;
+
+}
+.styled-table td {
+    padding: 15px;
+}
+
+/* Left cell styling */
+.left-cell {
+    border-right: 2px solid #03BFB5; /* Add right border */
+    border-bottom: 2px solid #03BFB5; /* Add bottom border */
+    width: 300px;
+    border-radius: 0px 3px 20px 0px;
+    color: white;
+    text-align: right;
+}
+
+/* Right cell styling */
+.styled-table tr td:last-child {
+    width: 1200px;
+    color: black;
+    background-color: #03BFB5;
+    border-radius: 5px 5px 20px 5px;
+    text-align: center;
+}
+

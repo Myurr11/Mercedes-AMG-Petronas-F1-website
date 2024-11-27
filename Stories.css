@@ -1,0 +1,106 @@
+*{
+    font-family: comfortaa, sans-serif;
+}
+body {
+    color: white;
+    background-color: black;
+    margin: 0 20px;
+}
+#StoriesHR{
+    margin-top: -5px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: -20px;
+}
+.section {
+    width: 65%;
+    position: relative;
+    overflow: hidden;
+    margin-right: 20px; /* Space between sections */
+}
+.section.right-section{
+    width: 35%;
+    margin-right: 0px; /* Reset margin for the last section */
+}
+.section2{
+    width: 35%;
+    position: relative;
+    overflow: hidden;
+}
+.section.right-section2{
+    width: 65%;
+    margin-right: 0px; /* Reset margin for the last section */
+}
+.section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0px 10px 70px 0px;
+}
+.section2 img{
+    border-radius: 0px 10px 70px 0px;
+}
+.button-container {
+    position: absolute;
+    top: 580px;
+}
+.button {
+    background-color: #03BFB5;
+    color: black;
+    border: none;
+    border-radius: 0px 2px 28px 0px;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 17px;
+    cursor: pointer;
+    transition: background-position 0.3s ease-in-out, box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    background-image: linear-gradient(to right, #028E81 50%, #03BFB5 50%);
+    background-size: 200% 100%;
+    background-position: 100% 0;
+}
+
+.button:hover {
+    background-position: 0 0; /* Move the gradient to the left on hover */
+    transform: scale(1.02); /* Scale up the button on hover */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* Adjust the box shadow on hover */
+    color: white; /* Change text color to white on hover */
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+#right{
+    font-size: 20px;
+}
+p{
+    margin-bottom: -20px;
+}
+/* More Stories button css */
+.MoreStoriesButton {
+    font-family: comfortaa;
+    align: center;
+    background-color: #03BFB5;
+    color: black;
+    margin-top: 40px;
+    margin-left: 900px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px 10px 0px 0px;
+    cursor: pointer;
+    font-size: 19px;
+    font-weight: bold;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+#footer{
+    margin-bottom: 0px;
+}
+

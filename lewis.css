@@ -1,0 +1,88 @@
+body {
+    background-color: black;
+    font-family: comfortaa, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.left-section {
+    width: 50%;
+    background-color: black;
+}
+
+.right-section {
+    width: 50%;
+    background-color: #03BFB5;
+    padding: 20px;
+    margin-top: -10px;
+}
+
+#name{
+    font-weight: bold;
+    font-size: 50px;
+    margin: 20px;
+}
+#Des{
+    margin-left: 20px;
+}
+
+/* is for left grid */
+.grid_left {
+    margin-top: 345px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-item_left {
+    background-color: black;
+    padding: 0px;
+    border: 1px solid black;
+    margin-left: 40px;
+}
+
+/* is for right grid */
+.grid_right {
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-item_right {
+    color: black;
+    background-color: #03BFB5;
+    padding: 10px;
+    border: 1px solid #03BFB5;
+}
+
+/* is for overlay image btw two sections */
+.overlay {
+    position: absolute;
+    top: 192px;
+    right: calc(100% - 1900px);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overlay img {
+    max-width: 50%;
+    max-height: 100%;
+}
+
+/* footer css */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}

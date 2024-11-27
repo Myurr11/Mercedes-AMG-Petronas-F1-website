@@ -1,0 +1,134 @@
+/* body of website */
+body{
+    color: white;
+    background-color: black;
+    font-family: comfortaa, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#heading{
+    text-align: center;
+}
+#driverslineup{
+    align: center;
+    margin-top: -10px;
+}
+/* lewis hamilton and George russell container */
+.HamiltonAndRussell{
+    padding-top: 20px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(2, 0fr);
+    grid-template-rows: repeat(1, 400px); /* Adjust height as needed */
+    gap: 12px;
+    max-width: 1200px;
+    margin-left: 120px;
+}
+
+/* Mick schumi and fred container */
+.MickAndFred {
+    margin-top: 0px;
+    padding: 120px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(2, 10fr);
+    grid-template-rows: repeat(1, 400px); /* Adjust height as needed */
+    gap: 15px;
+    max-width: 1200px;
+    margin-left: 0px;
+}
+
+.grid-item_George, .grid-item_Mick{
+    width: 800px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border: 1px solid #03BFB5;
+    border-radius: 40px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+}
+.grid-item_lewis, .grid-item_Fred{
+    padding-top: 5px;
+    width: 800px;
+    background-color: #03BFB5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border: 1px solid #03BFB5;
+    border-radius: 40px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.DriversName {
+    height: 40px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border: 1px solid black;
+}
+
+
+#juniorheading{
+    margin-left: 840px;
+}
+#juniordriver{
+    align: center;
+    margin-top: -10px;
+}
+.JuniorDrivers {
+    margin-top: 0x;
+    padding-left: 100px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(3, 10fr);
+    grid-template-rows: repeat(4, 400px);
+    gap: 15px;
+    max-width: 1200px;
+    margin-left: 20px;
+}
+
+#junior img{
+    border-radius: 20px 20px 0px 00px;
+}
+.JuniorDriversName {
+    margin-top: -65px;
+    height: 40px;
+    color: black;
+    background-color: #03BFB5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border: 1px solid #03BFB5;
+    Border-radius: 0px 0px 20px 20px;
+}
+
+
+.grid-item_lewis,
+.grid-item_George {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.grid-item_lewis img,
+.grid-item_George img,
+.grid-item_Fred img,
+.grid-item_Mick img{
+    transition: transform 0.3s ease;
+}
+
+.grid-item_lewis:hover img,
+.grid-item_George:hover img,
+.grid-item_Fred:hover img,
+.grid-item_Mick:hover img{
+    transform: scale(1.1);
+}

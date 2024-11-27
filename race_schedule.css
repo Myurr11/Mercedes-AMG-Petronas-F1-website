@@ -1,0 +1,70 @@
+/* body of website */
+body {
+    background-color: black;
+    color: white;
+    font-family: comfortaa;
+}
+
+h1 {
+    margin-left: 40px;
+}
+
+.container {
+    margin-left: 30px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, auto);
+    gap: 12px;
+}
+
+.image {
+    width: 90%;
+    height: auto;
+    margin: 10px;
+    position: relative;
+    perspective: 1000px;
+    cursor: pointer;
+    overflow: hidden; /* Ensure child elements don't overflow */
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+}
+
+.image .info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: height 0.5s ease;
+    opacity: 0;
+    color: white;
+}
+
+.image:hover img {
+    transform: scale(1.2);
+}
+
+.image:hover .info {
+    height: 100%;
+    opacity: 1;
+}
+.info h4 {
+    color: white;
+}
+.info h3 {
+    color: #03BFB5;
+}
+.info hr {
+    margin-top: -10px;
+}
